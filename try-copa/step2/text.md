@@ -12,5 +12,5 @@ docker run --detach --rm --privileged --name buildkitd --entrypoint buildkitd mo
 Next, run the patch command with Copa connecting to the buildkit container that was just created, and passing in the report that was generated in the previous step.
 
 ```plain
-copa patch -i nginx:1.21.6 -r nginx.1.21.6.json -t 1.21.6-patched --addr docker-container://buildkitd
+copa patch -i docker.io/library/nginx:1.21.6 -r nginx.1.21.6.json -t 1.21.6-patched --addr docker-container://buildkitd
 ```{{exec}}

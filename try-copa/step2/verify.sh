@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker image history nginx:1.21.6
+docker image history docker.io/library/nginx:1.21.6-patched
