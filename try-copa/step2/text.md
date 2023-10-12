@@ -3,14 +3,14 @@ Next, we'll use Copa to patch the vulnerabilities found in the report.
 <br>
 
 ### Solution
-Copa depends on buildkit to run, so first create a buildx instance for Copa to use
+Copa depends on buildkit to run, so start up a buildkit container for Copa to use
 
 ```plain
-docker buildx create --name demo
+docker run --detach --rm --privileged --name buildkitd --entrypoint buildkitd moby/buldkit:v0.12.0
 ```{{exec}}
 
-Next, run the patch command with Copa connecting to the buildx instance that was just created, and passing in the report that was generated in the previous step.
+Next, run the patch command with Copa connecting to the buildkit container that was just created, and passing in the report that was generated in the previous step.
 
 ```plain
-copa patch -i nginx:1.21.6 -r nginx.1.21.6.json -t 1.21.6-patched --addr buildx://demo
+copa patch -i nginx:1.21.6 -r nginx.1.21.6.json -t 1.21.6-patched --addr docker-container://buildkitd
 ```{{exec}}
