@@ -1,6 +1,8 @@
 In order for Copa to patch a container image, we need a vulnerability report that tells Copa what to patch.
 
-### Steps
+<br>
+
+### Solution
 Use Trivy to scan a container image and output a JSON format report
 
 ```plain

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Setting up envrionement..."
+
 apt-get update
 apt-get install -y wget 
 
@@ -8,3 +10,7 @@ tar -xzf copa_0.4.1_linux_amd64.tar.gz
 mv copa /usr/local/bin/copa
 
 snap install trivy
+
+echo "Setup complete"
+
+clear
