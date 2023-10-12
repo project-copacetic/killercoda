@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "Setting up envrionement..."
-
 apt-get update
 apt-get install -y wget 
 
@@ -11,6 +9,4 @@ mv copa /usr/local/bin/copa
 
 snap install trivy
 
-echo "Setup complete"
-
-clear
+touch /tmp/finished
