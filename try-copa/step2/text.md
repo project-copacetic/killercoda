@@ -1,3 +1,5 @@
+## Step 2
+
 Next, we'll use Copa to patch the vulnerabilities found in the report.
 
 <br>

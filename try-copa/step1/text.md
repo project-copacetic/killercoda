@@ -1,3 +1,5 @@
+## Step 1
+
 In order for Copa to patch a container image, we need a vulnerability report that tells Copa what to patch.
 
 <br>
