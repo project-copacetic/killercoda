@@ -16,6 +16,10 @@
                 "title":  "Patch the image using the vulnerability report",
                 "text": "step2/text.md",
                 "verify": "step2/verify.sh"
+            },
+            {
+                "title": "View the new patch layer",
+                "text": "step3/text.md"
             }
         ],
         "finish": {
